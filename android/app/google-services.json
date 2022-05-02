@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "463124066706",
+    "project_id": "cropdetection-f595e",
+    "storage_bucket": "cropdetection-f595e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463124066706:android:163dd1fa1817200085914b",
+        "android_client_info": {
+          "package_name": "com.example.cropidentification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463124066706-af7thbo1i131llc0cte8c25pjg0i4ik7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwhR-hIH6MdYiSk-c4I5hlGtu0R7GiaGg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463124066706-af7thbo1i131llc0cte8c25pjg0i4ik7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -11,11 +11,12 @@ class _AboutPageState extends State<AboutPage> {
   @override
   Widget build(BuildContext context) {
     List<String> crops = [
+      "Wheat",
       "Mustard",
       "Banana",
       "Rice",
       "Chilly",
-      "Cucumbar",
+      "Cucumber",
       "Cabbage",
       "Cotton",
       "Onion",
@@ -44,7 +45,7 @@ class _AboutPageState extends State<AboutPage> {
                       GetData().getData(crop),
                       style: TextStyle(fontSize: 15),
                       softWrap: true,
-                      maxLines: 2,
+                      maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
                     expanded: Text(

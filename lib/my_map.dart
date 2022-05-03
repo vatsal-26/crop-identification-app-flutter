@@ -11,7 +11,7 @@ class ShowMaps{
   String error;
 
   showUserMap() async{
-
+  
     try{
       final availableMaps = await MapLauncher.installedMaps;
       print("Lat: $lat, long: $long");

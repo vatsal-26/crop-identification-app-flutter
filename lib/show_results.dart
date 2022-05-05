@@ -204,29 +204,29 @@ class _ShowResultsState extends State<ShowResults> {
                         //   });
                       },
                     ),
-                    SizedBox(
-                      width: 30,
-                    ),
-                    RaisedButton(
-                      padding: EdgeInsets.all(15),
-                      color: Colors.lightGreen,
-                      child: Text("See Map"),
-                      onPressed: () async {
-                        location = HandleLocation();
-                        await location.getLocation();
-                        setState(() {
-                          lat = location.latitude;
-                          long = location.longitude;
-                        });
-                        ShowMaps map = ShowMaps(
-                            lat: lat,
-                            long: long,
-                            label: keyword,
-                            description: GetData().getData(keyword));
-
-                        map.showUserMap();
-                      },
-                    ),
+                    // SizedBox(
+                    //   width: 30,
+                    // ),
+                    // RaisedButton(
+                    //   padding: EdgeInsets.all(15),
+                    //   color: Colors.lightGreen,
+                    //   child: Text("See Map"),
+                    //   onPressed: () async {
+                    //     location = HandleLocation();
+                    //     await location.getLocation();
+                    //     setState(() {
+                    //       lat = location.latitude;
+                    //       long = location.longitude;
+                    //     });
+                    //     ShowMaps map = ShowMaps(
+                    //         lat: lat,
+                    //         long: long,
+                    //         label: keyword,
+                    //         description: GetData().getData(keyword));
+                    //
+                    //     map.showUserMap();
+                    //   },
+                    // ),
                     SizedBox(
                       width: 30,
                     ),

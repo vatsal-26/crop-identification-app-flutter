@@ -1,10 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:mailto/mailto.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() => runApp(MaterialApp(
   home:ProfileApp(),
 ));
 
 class ProfileApp extends StatelessWidget {
+
+  void funcOpenMailComposer() async{
+
+    final mailtoLink = Mailto(
+      to: ['abhishekmishra5903@gmail.com'],
+      subject: '',
+      body: '',
+    );
+    await launch('$mailtoLink');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -178,7 +191,7 @@ class ProfileApp extends StatelessWidget {
             width: 300.00,
 
             child: RaisedButton(
-                onPressed: (){},
+                onPressed: funcOpenMailComposer,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(80.0)
                 ),
